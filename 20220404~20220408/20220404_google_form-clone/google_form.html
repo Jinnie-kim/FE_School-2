@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Google form</title>
+</head>
+<body>
+    <section class="google_form">
+        <header class="google_form-header">
+            <h1>
+                나와 잘 맞는 회사는?
+            </h1>
+            <p>
+                가고 싶은 회사에 대한 호감도를 조사합니다. 아이고 의미없다.
+            </p>
+        </header>
+        <main>
+            <article class="google_form-box company">
+                <h2 class="google_form-box-header">
+                    다음 문자중에 왠지 마음에 드는 것을 하나 고르세요.
+                </h2>
+                <form action="">
+                    <div class="company_option">
+                        <input type="radio" id="naver" name="company" value="naver">
+                        <label for="naver">네</label>
+                    </div>
+                    <div class="company_option">
+                        <input type="radio" id="kakao" name="company" value="kakao">
+                        <label for="kakao">카</label>
+                    </div>
+                    <div class="company_option">
+                        <input type="radio" id="line" name="company" value="line">
+                        <label for="line">라</label>
+                    </div>
+                    <div class="company_option">
+                        <input type="radio" id="coupang" name="company" value="coupang">
+                        <label for="coupang">쿠</label>
+                    </div>
+                    <div class="company_option">
+                        <input type="radio" id="baemin" name="company" value="baemin">
+                        <label for="baemin">배</label>
+                    </div>
+                </form>
+            </article>
+            <article class="google_form-box massenger">
+                <h2 class="google_form-box-header">
+                    친구와 문자를 합니다. 다음 중 어떤 메신저를 이용하시겠습니까? 모두 골라주세요. 
+                </h2>
+                <form action="">
+                    <div class="massenger_option">
+                        <input type="checkbox" id="kakaotalk" name="massenger" value="kakaotalk">
+                        <label for="kakaotalk">카카오톡</label>
+                    </div>
+                    <div class="massenger_option">
+                        <input type="checkbox" id="line_massenger" name="massenger" value="line_massenger">
+                        <label for="line_massenger">라인</label>
+                    </div>
+                    <div class="massenger_option">
+                        <input type="checkbox" id="insta" name="massenger" value="insta">
+                        <label for="insta">인스타그램 디엠</label>
+                    </div>
+                    <div class="massenger_option">
+                        <input type="checkbox" id="nate" name="massenger" value="nate">
+                        <label for="nate">네이트온</label>
+                    </div>
+                    <div class="massenger_option">
+                        <input type="checkbox" id="budybudy" name="massenger" value="budybudy">
+                        <label for="budybudy">버디버디</label>
+                    </div>
+                </form>
+            </article>
+            <article class="google_form-box plan">
+                <h2 class="google_form-box-header">
+                    면접에서 자신의 포부를 한 문장으로 얘기한다면?
+                </h2>
+                <form action="">
+                    <input type="text" placeholder="내 답변">
+                </form>
+            </article>
+            <article class="google_form-box self-quote">
+                <h2 class="google_form-box-header">
+                    당신은 지금 한 기업의 최종면접을 앞두고 있습니다. 면접장에 들어가기 직전, 자기 자신에게 해<br>주고 싶은 말은?
+                </h2>
+                <form action="">
+                    <input type="text" placeholder="내 답변">
+                </form>
+            </article>
+            <article class="google_form-box question">
+                <h2 class="google_form-box-header">
+                    다음 중 기술 면접 때 듣고 싶은 질문이 아닌것은?
+                </h2>
+                <form action="">
+                    <select name="interview_q">
+                        <option value="">
+                            선택
+                        </option>
+                        <option value="html">
+                            div태그는 언제쓰는게 적절할까요?
+                        </option>
+                        <option value="css">
+                            이미지 스프라이트 기법을 자세히 설명해보세요.
+                        </option>
+                        <option value="js">
+                            반복문에 대해 아는대로 말해보세요.
+                        </option>
+                    </select>
+                </form>
+            </article>
+            <article class="google_form-box date">
+                <h2 class="google_form-box-header">
+                    취업을 희망하는 날짜를 선택해주세요
+                </h2>
+                <form action="">
+                    <label for="date">날짜</label>
+                    <br>
+                    <input type="date" id="date">
+                </form>
+            </article>
+            <article class="google_form-box time">
+                <h2 class="google_form-box-header">
+                    업무를 시작 하기에 가장 적당한 시간을 고르세요
+                </h2>
+                <form action="">
+                    <label for="time">시간</label>
+                    <br>
+                    <input type="time">
+                </form>
+            </article>
+        </main>
+        <footer class="google_form-footer">
+            <button type="submit" class="submit_btn">
+                제출
+            </button>
+            <button type="reset" class="undo_link">
+                양식 지우기
+            </button>
+        </footer>
+    </section>
+</body>
+</html>
