@@ -1,0 +1,233 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cornflowerblue;
+}
+
+/* 공통 핑구 */
+
+.pingu {
+  width: 500px;
+  height: 220px;
+  margin: 90px auto 90px auto;
+  position: relative;
+  background-color: transparent;
+}
+
+.pingu .face {
+  width: 175px;
+  height: 220px;
+  position: absolute;
+  background-color: #262533;
+  box-shadow: -5px 8px 19px 0px rgba(38, 37, 51, 0.59);
+}
+
+.pingu .face.left {
+  border-radius: 100% 0% 46% 54% / 62% 98% 2% 38%;
+}
+
+.pingu .face.right {
+  left: 35%;
+  border-radius: 0% 100% 43% 57% / 98% 61% 39% 2%;
+}
+
+.pingu .eye {
+  width: 50px;
+  height: 60px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  border-radius: 50% 50% 50% 50% / 48% 47% 53% 52%;
+}
+
+.pingu .eye.left {
+  top: 30%;
+  left: 10%;
+  transform: rotate(33deg);
+}
+
+.pingu .eye.right {
+  top: 30%;
+  right: 40%;
+  transform: rotate(-33deg);
+}
+
+/* 우는 핑구 */
+
+.pingu .eye_pupil {
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  background-color: #262533;
+  border-radius: 51% 49% 53% 47% / 55% 53% 47% 45%;
+}
+
+.pingu .eye_pupil.left {
+  top: 35%;
+  left: 13%;
+  transform: rotate(32deg);
+}
+
+.pingu .eye_pupil.right {
+  top: 35%;
+  right: 43%;
+  transform: rotate(-32deg);
+}
+
+.pingu .tear {
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  top: 55%;
+  left: 7%;
+  border-radius: 51% 49% 48% 52% / 70% 71% 29% 30%;
+  background-color: #dfe4ed;
+  transform: rotate(15deg);
+  animation-name: tear-drop;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+}
+
+.pingu .mouse {
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  top: 53%;
+  left: 21%;
+  background-color: #ca2f4d;
+  border-radius: 51% 49% 48% 52% / 68% 63% 37% 32%;
+}
+
+/* 웃는 핑구 */
+
+.pingu .eye_smile {
+  width: 10px;
+  height: 30px;
+  position: absolute;
+  border-radius: 52% 48% 43% 57% / 51% 50% 50% 49%;
+  background-color: #262533;
+}
+
+.pingu .eye_smile.left_1 {
+  top: 35%;
+  left: 12%;
+  transform: rotate(45deg);
+}
+
+.pingu .eye_smile.left_2 {
+  top: 35%;
+  left: 78px;
+  transform: rotate(-45deg);
+}
+
+.pingu .eye_smile.right_1 {
+  top: 35%;
+  right: 46%;
+  transform: rotate(45deg);
+}
+
+.pingu .eye_smile.right_2 {
+  top: 35%;
+  right: 42%;
+  transform: rotate(-45deg);
+}
+
+/* 화난 핑구 */
+
+.pingu .eye.angry {
+  top: 100px;
+}
+
+.pingu .mouse.angry {
+  top: 70%;
+  left: 25%;
+}
+
+.pingu .eye.right.angry {
+  right: 35%;
+}
+
+.pingu .eye_pupil.angry {
+  width: 35px;
+  height: 35px;
+  top: 45%;
+}
+
+.pingu .eye_pupil.right.angry {
+  right: 39%;
+  animation-name: eye-rolling-right;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.pingu .eye.left.angry {
+  left: 15%;
+}
+
+.pingu .eye_pupil.left.angry {
+  left: 18%;
+  animation-name: eye-rolling-left;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* animation */
+
+@keyframes tear-drop {
+  0% {
+    top: 55%;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  80% {
+    opacity: 0.2;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+
+  100% {
+    top: 70%;
+    opacity: 0;
+  }
+}
+
+@keyframes eye-rolling-right {
+  0% {
+    right: 39%;
+  }
+
+  50% {
+    right: 40%;
+  }
+
+  100% {
+    right: 35%;
+  }
+}
+
+@keyframes eye-rolling-left {
+  0% {
+    left: 18%;
+  }
+
+  50% {
+    left: 14%;
+  }
+
+  100% {
+    left: 20%;
+  }
+}
