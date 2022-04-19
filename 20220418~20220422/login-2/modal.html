@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="modal.css">
+    <title>Weniv login -2 Modal</title>
+</head>
+<body>
+    <article class="modal-login">
+        <h2 class="text-hide">
+            회원가입, 로그인 또는 소셜서비스로 로그인
+        </h2>
+        <section class="login__form">
+            <h3 class="login__form-title">
+                로그인 또는 회원가입
+            </h3>
+            <p class="login__form-description">
+                위니브에서 여러분의 궁금증을 해결하세요! :)
+            </p>
+            <form class="form__login">
+                <fieldset class="login__id">
+                    <label for="input-id" class="text-hide">
+                        아이디
+                    </label>
+                    <input type="text" class="id__input" id="input-id" placeholder="아이디">
+                </fieldset>
+                <fieldset class="form__password">
+                    <label for="input-password" class="text-hide">
+                        비밀번호
+                    </label>
+                    <input type="password" id="input-password">
+                </fieldset>
+                <input type="checkbox" id="input-hold" class="hold__input text-hide">
+                <label for="input-hold" class="hold__label">
+                    로그인 상태 유지
+                </label>
+                <button type="button" class="login__button">
+                    로그인
+                </button>
+                <div class="userinfo__link">
+                    <a href="#">
+                        회원가입
+                    </a>
+                    <a href="#">
+                        아이디/비밀번호 찾기
+                    </a>
+                </div>
+            </form>
+            <section class="login__social">
+                <h3 class="text-hide">
+                    소셜서비스로 로그인 
+                </h3>
+                <ul>
+                    <li>
+                        <a href="#" class="google login__social-link">
+                        구글 계정으로 로그인
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="facebook login__social-link">
+                        페이스북 계정으로 로그인
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="naver login__social-link">
+                        네이버 계정으로 로그인
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="kakao login__social-link">
+                        카카오톡 계정으로 로그인
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <button class="button-close">
+                <img src="./img/close.png" alt="로그인 닫기">
+            </button>
+        </section>
+    </article>
+</body>
+</html>
