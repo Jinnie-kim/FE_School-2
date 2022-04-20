@@ -1,0 +1,272 @@
+/* Reset CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  }
+
+  body {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  button,
+  textarea,
+  input {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 16px;
+  }
+  
+  button:focus,
+  button:active,
+  input:focus,
+  input:active,
+  textarea:focus,
+  textarea:active {
+    box-shadow: none;
+    outline: none;
+  }
+
+  fieldset {
+      padding: 0;
+      border: 0;
+      font: inherit;
+      vertical-align: baseline;
+	  -webkit-box-sizing: border-box;
+  }
+  
+  ul,
+  ol,
+  li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  
+  .text-hide {
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+  }
+
+  /* login modal */
+
+  .modal-login {
+      width: 520px;
+      border: 1px solid #c4c4c4;
+      border-radius: 10px;
+  }
+
+  .login__form-title {
+      padding: 20px 0 18px;
+      border-bottom: 1px solid #c4c4c4;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20.03px;
+      text-align: center;
+  }
+
+  .login__form-main {
+      padding: 26px 24px 25px;
+  }
+
+  .login__form-description {
+      margin-bottom: 24px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+  }
+
+  .id__input,
+  .password-input {
+    display: block;
+    width: 100%;
+    padding: 15px 16px 15px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+
+  .form__input:first-child {
+    margin-bottom: 10px;
+  }
+
+  .form__input:nth-child(2) {
+    margin-bottom: 16px;
+  }
+
+  .hold__label {
+    display: inline-block;
+    height: 22px;
+    margin: 17px 0 21px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.03px;
+    color: #767676;
+    cursor: pointer;
+  }
+
+  .hold__label:before {
+    display: inline-block;
+    content: '';
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    vertical-align: -5px;
+    background-image: url(./img/icon_check_empty.png);
+  }
+
+  .login__button {
+    width: 100%;
+    padding: 17px 0 15px;
+    margin-bottom: 20px;
+    line-height: 28px;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: #2F80ED;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .userinfo__link {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .form__login a[class$="link"] {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    color: #767676;
+  }
+
+  .signup__link::after {
+    content: '|';
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    margin: 0 12px;
+  }
+
+.login__divider {
+  display: blcok;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.53px;
+  text-align: center;
+  color: #767676;
+}
+
+.login__form .login__social {
+  position: relative;
+  margin-top: 30px;
+  padding: 38px 24px 25px;
+    font-size: 16px;
+    line-height: 20.03px;
+    color: #767676;
+}
+
+.login__social::before {
+  content: "또는";
+  display: block;
+  width: 52px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+  text-align: center;
+  z-index: 10;
+}
+
+.login__social::after {
+  content: "";
+  display: block;
+  width: calc(100% - 48px);
+  position: absolute;
+  top: 9px;
+  height: 1px;
+  margin-top: -1px;
+  background-color: #C4C4C4;
+}
+
+.login__social li + li {
+  margin-top: 10px;
+}
+
+.login__social-link {
+  display: block;
+    padding: 15px 14px;
+    border: 1px solid #767676;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #767676;
+}
+
+[class^="icon"]::before {
+  float: left;
+  content: '';
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-image: url('./img/css_retina.png');
+  /* for retina */
+  background-size: 96px 96px;
+}
+
+.login__social-link.icon-facebook {
+  border: 1px solid #2d9cdb;
+}
+
+.login__social-link.icon-naver {
+  border: 1px solid #00BF18;
+}
+
+.login__social-link.icon-kakao {
+  border: 1px solid #F2C94C;
+}
+
+.login__social .icon-google::before {
+  background-position: -58px -58px;
+}
+
+.login__social .icon-facebook::before {
+  background-position: -10px -58px;
+}
+
+.login__social .icon-naver::before {
+  background-position: -58px -10px;
+}
+
+.login__social .icon-kakao::before {
+  background-position: -10px -10px;
+}
