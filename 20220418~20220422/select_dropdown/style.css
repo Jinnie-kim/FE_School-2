@@ -1,0 +1,123 @@
+/* Reset CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  body {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  button,
+  textarea,
+  input {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  
+  button:focus,
+  button:active,
+  input:focus,
+  input:active,
+  textarea:focus,
+  textarea:active {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  ul,
+  ol,
+  li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  
+  .text-hide {
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+  }
+
+  .text-ellipsis {
+    /* 텍스트를 감싸고 있는 부모요소가 공백을 만났을 때 어떻게 처리할 것인지에 대한 속성 */
+    white-space: nowrap;
+    overflow: hidden;
+    /* 말줄임 만들기  패딩 값 조정으로 말줄임 표시와 버튼 이미지가 겹치는 것을 막아줄 수 있다.*/
+    text-overflow: ellipsis;
+}
+
+/* SelectBox */
+
+.selectbox {
+    width: 200px;
+}
+
+.selectbox__button {
+    display: block;
+    /* width값 100% 주는 거 확인하기 */
+    width: 100%;
+    margin-bottom: 9px;
+    padding: 12px 0 12px 14px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    background-image: url(./img/icon-Triangle-down.png);
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+    font-size: 12px;
+    text-align: left;
+}
+
+.selectbox__button.clicked {
+    outline: 3px solid #fbe4fb;
+    border: 1px solid #9b51e0;
+    background-image: url(./img/icon-Triangle-up.png);
+}
+
+.selectbox__list {
+    border: 1px solid #c4c4c4;
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+}
+.selectbox__list li {
+    padding: 5px 0;
+}
+
+.selectbox__list li button {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 7px 0 7px 10px;
+    border-radius: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.selectbox__list li button:focus,
+.selectbox__list li button:hover {
+    background-color: #fbe4fb;
+}
