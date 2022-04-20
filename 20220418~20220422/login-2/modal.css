@@ -75,6 +75,10 @@
       border-radius: 10px;
   }
 
+  .login__form {
+    position: relative;
+  }
+
   .login__form-title {
       padding: 20px 0 18px;
       border-bottom: 1px solid #c4c4c4;
@@ -269,4 +273,18 @@
 
 .login__social .icon-kakao::before {
   background-position: -10px -10px;
+}
+
+.login__form .button-close {
+  position: absolute;
+  padding: 22px 24px;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    background-color: transparent;
+}
+
+.login__form .button-close img{
+  width: 16px;
+  height: 16px;
 }
