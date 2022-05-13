@@ -117,6 +117,10 @@
     cursor: pointer;
 }
 
+.selectbox__list.hide {
+  display: none;
+}
+
 .selectbox__list li button:focus,
 .selectbox__list li button:hover {
     background-color: #fbe4fb;
