@@ -8,12 +8,14 @@ selectButton.addEventListener('click', () => {
     selectListBox.classList.remove('hide');
 })
 
+selectButton.addEventListener('blur', () => {
+    selectListBox.classList.add('hide');
+})
 
 
-selectListBox.addEventListener('click', (event) => {
-    if(event.target.tagName == 'BUTTON') {
-        selectButton.innerText = this.event.target.innerText; // this.event.target.textContent.trim(); 
-        selectListBox.classList.add('hide');
-    }
-});
-
+selectListBox.forEach((item) => {
+    item.addEventListener('click', () => {
+        const language = item.textContent.trim();
+        selectButton.innerText = language;
+    })
+})
