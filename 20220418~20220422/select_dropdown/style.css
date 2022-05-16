@@ -95,14 +95,25 @@
 }
 
 .selectbox__list {
+    /* max-height: 0; */
     border: 1px solid #c4c4c4;
-    padding: 5px 8px;
+    padding:  5px 8px;
+    /* overflow: hidden; */
     border-radius: 10px;
     font-size: 14px;
     font-weight: 400;
     line-height: 16.41px;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+    /* transition: max-height 500ms ease-in, box-shadow 500ms ease-in;; */
 }
+
+/* .selectbox__list.show {
+  max-height: 250px;
+  padding: 5px 8px;
+  border: 1px solid #c4c4c4;
+} */
+
+
 .selectbox__list li {
     padding: 5px 0;
 }
