@@ -13,9 +13,9 @@ selectButton.addEventListener('blur', () => {
 })
 
 
-selectListBox.forEach((item) => {
-    item.addEventListener('click', () => {
-        const language = item.textContent.trim();
+selectListBox.addEventListener('click', (event) => {
+    if(event.target.nodeName == 'BUTTON') {
+        const language = event.target.textContent.trim();
         selectButton.innerText = language;
-    })
+    }
 })
